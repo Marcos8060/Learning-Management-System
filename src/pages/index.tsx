@@ -11,8 +11,8 @@ export default function Home() {
     <>
     {/* <NavbarSection /> */}
     <HeroSection />
-    <FeaturedSection />
     <CategorySection />
+    {/* <FeaturedSection /> */}
     <TestimonialSection />
     <FooterSection />
     </>

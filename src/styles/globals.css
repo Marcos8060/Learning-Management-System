@@ -11,6 +11,55 @@
   font-family: "Space Grotesk", sans-serif;
 }
 
+.heroImg {
+  background-image: url("/pattern.jpg");
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+}
+.heroImg::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Regular CSS equivalent of the Tailwind CSS gradient */
+  /* background: linear-gradient(to right, #7c3aed, #6366f1); */
+  /* background-color: #001123; */
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.categoryImg {
+  background-image: url("/ai2.jpg");
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 40vh;
+  z-index: 1;
+  border-radius: 16px;
+}
+.categoryImg::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Regular CSS equivalent of the Tailwind CSS gradient */
+  /* background: linear-gradient(to right, #7c3aed, #6366f1); */
+  /* background-color: #001123; */
+  opacity: 0.9;
+  z-index: -1;
+}
+
 .owl-item.center {
   z-index: 1;
 }

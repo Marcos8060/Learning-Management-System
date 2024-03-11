@@ -49,3 +49,83 @@ export const testimonial = [
         adipisci doloribus eaque!`
     },
 ]
+
+export const allCategories = [
+    {
+        img: '/hero.jpg',
+        name: 'Web Development'
+    },
+    {
+        img: '/ai2.jpg',
+        name: 'Machine Learning'
+    },
+    {
+        img: '/ai3.jpg',
+        name: 'Cyber Security'
+    },
+    {
+        img: '/ai3.jpg',
+        name: 'Cyber Security'
+    },
+    {
+        img: '/hero.jpg',
+        name: 'Web Development'
+    },
+    {
+        img: '/ai2.jpg',
+        name: 'Machine Learning'
+    },
+]
+
+export const technology = [
+    {
+        img: '/hero.jpg',
+        name: 'Web Development'
+    },
+    {
+        img: '/ai2.jpg',
+        name: 'Machine Learning'
+    },
+    {
+        img: '/ai3.jpg',
+        name: 'Cyber Security'
+    },
+    {
+        img: '/ai3.jpg',
+        name: 'Cyber Security'
+    },
+]
+export const business = [
+    {
+        img: '/hero.jpg',
+        name: 'Web Development'
+    },
+    {
+        img: '/ai2.jpg',
+        name: 'Machine Learning'
+    },
+    {
+        img: '/ai3.jpg',
+        name: 'Cyber Security'
+    },
+    {
+        img: '/ai3.jpg',
+        name: 'Cyber Security'
+    },
+]
+
+export const designs = [
+    {
+        img: '/hero.jpg',
+        name: 'Web Development'
+    },
+    {
+        img: '/ai2.jpg',
+        name: 'Machine Learning'
+    },
+    {
+        img: '/ai3.jpg',
+        name: 'Cyber Security'
+    },
+    
+]

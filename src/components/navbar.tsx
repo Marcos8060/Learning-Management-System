@@ -27,7 +27,7 @@ const NavbarSection = () => {
       <section className="flex items-center justify-between sm:px-16 px-4 sticky top-0 z-50"
       style={{
         transition: "1s ease",
-        backgroundColor: navBackground ? "#000000" : "#FFFFFF",
+        backgroundColor: navBackground ? "#000000" : "transparent",
       }} 
       >
         <div className="py-4">
@@ -35,13 +35,13 @@ const NavbarSection = () => {
             <h1 className="text-2xl font-bold">Logo</h1>
           </Link>
         </div>
-        <nav className="md:block hidden py-6">
+        <nav className="md:block hidden py-4">
           <ul className="flex items-center gap-8">
             <li className="">
-              <Link href="#about" className="">For Students</Link>
+              <Link href="#about" className="text-xl">For Students</Link>
             </li>
             <li className="">
-              <Link href="#experience" className="">How it Works</Link>
+              <Link href="#experience" className="text-xl">How it Works</Link>
             </li>
           </ul>
         </nav>

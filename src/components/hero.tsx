@@ -5,25 +5,27 @@ import { HiOutlineArrowLongRight } from "react-icons/hi2";
 
 const HeroSection = () => {
   return (
-    <section className="h-screen">
+    <section className="h-screen heroImg">
       <NavbarSection />
-      <section className="flex items-center gap-4 h-[90vh] p-20">
+      <section className="flex items-center justify-between gap-4 h-[90vh] p-20">
         <div className="w-1/2 space-y-4">
-          <h1 className="uppercase text-4xl">
+          <p className="font-bold">Learn Online. Anywhere. Anytime.</p>
+          <h1 className="uppercase text-5xl">
             Future of <br /> <span className="font-thin">Online</span>{" "}
-            <span className="font-bold">Education.</span>
+            <span className="font-bold text-primary">Education</span>.
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-            eligendi commodi, nesciunt laborum eos odit inventore fugit
-            praesentium ab maiores.
+          <p className="text-sm">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam
+            repellat architecto recusandae vel sapiente harum veritatis
+            voluptates molestias laborum inventore reiciendis amet, iure
+            cupiditate, quo mollitia voluptatibus minus modi doloremque.
           </p>
-          <button className="bg-black text-white px-4 py-2 font-thin flex items-center gap-2">
+          <button className="bg-black text-primary px-4 py-2 font-thin flex items-center gap-2">
             Learn More
             <HiOutlineArrowLongRight />
           </button>
         </div>
-        <div className="w-1/2 mx-auto">
+        <div className="">
           <div className="relative">
             <Image
               className="rounded-xl mx-auto"
@@ -32,7 +34,7 @@ const HeroSection = () => {
               width={400}
               height={400}
             />
-            <div className="absolute bg-primary bottom-4 right-96 p-4 rounded-xl space-y-2 w-56">
+            <div className="absolute bg-primary bottom-4 right-72 p-4 rounded-xl space-y-2 w-56">
               <q className="text-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
                 molestias.

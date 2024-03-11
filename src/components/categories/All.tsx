@@ -1,11 +1,11 @@
-import { business } from "@/assets/data";
+import { allCategories } from "@/assets/data";
 import Image from "next/image";
 import React from "react";
 
-const BusinessCategory = () => {
+const AllCategories = () => {
   return (
     <section className="grid grid-cols-3 gap-4">
-      {business.map((item, index) => (
+      {allCategories.map((item, index) => (
         <div className="relative overflow-hidden cursor-pointer" key={index}>
           <div
             className="absolute inset-0 bg-gradient-to-t from-secondary to-transparent rounded-xl overflow-hidden"
@@ -26,4 +26,4 @@ const BusinessCategory = () => {
   );
 };
 
-export default BusinessCategory;
+export default AllCategories;
