@@ -1,4 +1,57 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight&family=Kumbh+Sans&family=Nunito:wght@400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;900&family=Inter:wght@200;300;400&family=Josefin+Sans:wght@300;400&family=Kumbh+Sans&family=Montserrat&family=Nunito:wght@400;500;600;700&family=Poltawski+Nowy:wght@500&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&family=Space+Grotesk&display=swap");
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+* {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.owl-item.center {
+  z-index: 1;
+}
+
+.owl-item.active.center {
+  z-index: 2;
+}
+
+/* testimonial carousel */
+.owl-item.active.center .slider-card {
+  transform: scale(1.2);
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 1;
+  background: #FFCC00;
+  /* color: #fff; */
+  z-index: 3;
+}
+
+@media (max-width: 576px) {
+  .owl-item.active.center .slider-card {
+    transform: scale(0.9);
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    opacity: 1;
+    background: #FFCC00;
+    /* color: #fff; */
+    z-index: 3;
+  }
+}
+
+.slider-card {
+  background: #f7f7f7;
+  border: 1px solid #e4dede;
+  opacity: 0.8;
+  color: black;
+  padding: 0px 0px;
+  margin-top: 50px;
+  transform: scale(0.9);
+  opacity: 0.5;
+  transition: all 0.3s;
+}

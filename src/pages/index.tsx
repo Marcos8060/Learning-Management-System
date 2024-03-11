@@ -1,9 +1,20 @@
+import CategorySection from "@/components/categories";
+import FeaturedSection from "@/components/featured";
+import FooterSection from "@/components/footer";
+import HeroSection from "@/components/hero";
+import NavbarSection from "@/components/navbar";
+import TestimonialSection from "@/components/testimonials";
 
 
 export default function Home() {
   return (
-    <div className="bg-primary p-20">
-    Hello
-    </div>
+    <>
+    {/* <NavbarSection /> */}
+    <HeroSection />
+    <FeaturedSection />
+    <CategorySection />
+    <TestimonialSection />
+    <FooterSection />
+    </>
   );
 }

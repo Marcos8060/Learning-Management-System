@@ -12,6 +12,7 @@ const config: Config = {
         primary: '#FFCC00',
         secondary: '#000000',
         tertiary: '#CCCCCC',
+        blue: "#10142D",
       }
     },
   },
