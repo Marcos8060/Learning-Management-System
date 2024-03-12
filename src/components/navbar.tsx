@@ -2,6 +2,7 @@ import React, { useState,useRef,useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import Drawer from "./drawer";
 import Link from "next/link";
+import FooterSection from "./footer";
 
 const NavbarSection = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,26 +28,27 @@ const NavbarSection = () => {
       <section className="flex items-center justify-between sm:px-16 px-4 sticky top-0 z-50"
       style={{
         transition: "1s ease",
-        backgroundColor: navBackground ? "#000000" : "transparent",
+        backgroundColor: navBackground ? "#FFCC00" : "transparent",
       }} 
       >
         <div className="py-4">
           <Link href="/" className="">
-            <h1 className="text-2xl font-bold">Logo</h1>
+            <img className="w-40" src="/logo.png" alt="" />
           </Link>
         </div>
         <nav className="md:block hidden py-4">
           <ul className="flex items-center gap-8">
             <li className="">
-              <Link href="#about" className="text-xl">For Students</Link>
+              <Link href="#about" className="">For Students</Link>
             </li>
             <li className="">
-              <Link href="#experience" className="text-xl">How it Works</Link>
+              <Link href="/about" className="">How it Works</Link>
             </li>
           </ul>
         </nav>
         <div>
           <button className="">Login</button>
+          <div className="border-b-4 border-black w-6"></div>
         </div>
         <div className="md:hidden block py-4">
           <AiOutlineMenu

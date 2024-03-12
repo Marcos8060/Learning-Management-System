@@ -54,8 +54,8 @@ const TestimonialSection = () => {
 
   return (
     <>
-      <section className="sm:px-12 px-2 sm:py-16 py-8">
-        <h1 className="text-center text-4xl">Testimonials</h1>
+      <section className="sm:px-12 px-2 sm:py-16 py-8 heroImg">
+        <h1 className="text-center text-4xl">What Our Students Say</h1>
         <div className="my-12">
           <OwlCarousel {...testimonials}>
             {testimonial.map((item, index) => (
@@ -66,8 +66,8 @@ const TestimonialSection = () => {
                   src={item.img}
                   alt=""
                 />
-                <p className={`text-center text-xs`}>{item.name}</p>
-                <p className="text-center pb-4" style={{ fontSize: "9px" }}>
+                <p className={`text-center text-sm font-bold`}>{item.name}</p>
+                <p className="text-center pb-4 text-xs">
                   {item.desc}
                 </p>
               </div>

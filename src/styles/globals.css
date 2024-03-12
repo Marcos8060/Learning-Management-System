@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight&family=Kumbh+Sans&family=Nunito:wght@400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap'); */
-@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;900&family=Inter:wght@200;300;400&family=Josefin+Sans:wght@300;400&family=Kumbh+Sans&family=Montserrat&family=Nunito:wght@400;500;600;700&family=Poltawski+Nowy:wght@500&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&family=Space+Grotesk&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;900&family=Inter:wght@200;300;400&family=Josefin+Sans:wght@300;400&family=Kumbh+Sans&family=Montserrat&family=Nunito:wght@400;500;600;700&family=Poltawski+Nowy:wght@500&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&family=Space+Grotesk&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight&family=Kumbh+Sans&family=Nunito:wght@400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500&display=swap');
 
 
 @tailwind base;
@@ -8,7 +8,8 @@
 
 
 * {
-  font-family: "Space Grotesk", sans-serif;
+  /* font-family: "Space Grotesk", sans-serif; */
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 .heroImg {
@@ -35,18 +36,19 @@
   z-index: -1;
 }
 
-.categoryImg {
-  background-image: url("/ai2.jpg");
+.aboutSection {
+  background-image: url("/hero.jpg");
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   position: relative;
-  height: 40vh;
+  height: 70vh;
   z-index: 1;
   border-radius: 16px;
 }
-.categoryImg::after {
+.aboutSection::after {
   position: absolute;
   content: "";
   top: 0;
@@ -55,8 +57,8 @@
   height: 100%;
   /* Regular CSS equivalent of the Tailwind CSS gradient */
   /* background: linear-gradient(to right, #7c3aed, #6366f1); */
-  /* background-color: #001123; */
-  opacity: 0.9;
+  background-color: black;
+  opacity: 0.7;
   z-index: -1;
 }
 

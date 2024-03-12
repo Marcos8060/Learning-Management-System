@@ -129,3 +129,23 @@ export const designs = [
     },
     
 ]
+
+export const experts = [
+    {
+        img: '/expert.jpg',
+        name: 'Jane Doe',
+        field: 'Design and User Experience'
+    },
+    {
+        img: '/expert.jpg',
+        name: 'Ann Wills',
+        field: 'Vocabulary and Arts'
+    },
+    {
+        img: '/expert.jpg',
+        name: 'Jane Doe',
+        field: 'Technology Expert'
+    },
+  
+    
+]
