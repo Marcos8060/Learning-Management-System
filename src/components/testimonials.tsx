@@ -33,7 +33,7 @@ const TestimonialSection = () => {
     center: true,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 8000,
+    autoplayTimeout: 6000,
     responsive: {
       0: {
         items: 1,

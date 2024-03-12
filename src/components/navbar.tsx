@@ -1,8 +1,13 @@
-import React, { useState,useRef,useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import Drawer from "./drawer";
 import Link from "next/link";
-import FooterSection from "./footer";
+import { GoogleLogin, CredentialResponse } from "@react-oauth/google";
+
+interface ApiError {
+  status: number;
+  message: string;
+}
 
 const NavbarSection = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +15,7 @@ const NavbarSection = () => {
 
   const navRef = useRef<boolean>();
   navRef.current = navBackground;
+
   useEffect(() => {
     const handleScroll = () => {
       const show = window.scrollY > 40;
@@ -23,13 +29,22 @@ const NavbarSection = () => {
     };
   }, []);
 
+  const responseMessage = (credentialResponse: CredentialResponse) => {
+    console.log(credentialResponse);
+  };
+
+  const errorMessage = (error?: ApiError) => {
+    console.log(error);
+  };
+
   return (
     <>
-      <section className="flex items-center justify-between sm:px-16 px-4 sticky top-0 z-50"
-      style={{
-        transition: "1s ease",
-        backgroundColor: navBackground ? "#FFCC00" : "transparent",
-      }} 
+      <section
+        className="flex items-center justify-between sm:px-16 px-4 sticky top-0 z-50"
+        style={{
+          transition: "1s ease",
+          backgroundColor: navBackground ? "#FFCC00" : "transparent",
+        }}
       >
         <div className="py-4">
           <Link href="/" className="">
@@ -39,15 +54,20 @@ const NavbarSection = () => {
         <nav className="md:block hidden py-4">
           <ul className="flex items-center gap-8">
             <li className="">
-              <Link href="#about" className="">For Students</Link>
+              <Link href="#about" className="">
+                For Students
+              </Link>
             </li>
             <li className="">
-              <Link href="/about" className="">How it Works</Link>
+              <Link href="/about" className="">
+                How it Works
+              </Link>
             </li>
           </ul>
         </nav>
         <div>
-          <button className="">Login</button>
+          <GoogleLogin onSuccess={responseMessage} onError={errorMessage} />
+          {/* <button className="">Login</button> */}
           <div className="border-b-4 border-black w-6"></div>
         </div>
         <div className="md:hidden block py-4">
