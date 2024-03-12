@@ -13,7 +13,7 @@ export default function Home() {
     {/* <NavbarSection /> */}
     <HeroSection />
     <CategorySection />
-    {/* <FeaturedSection /> */}
+    <FeaturedSection />
     <LearningBegins />
     <TestimonialSection />
     <FooterSection />

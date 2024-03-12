@@ -11,6 +11,7 @@ const CategorySection = () => {
   return (
     <section className='py-10 px-20 h-auto'>
         <h1 className="text-2xl">Course Categories</h1>
+        <div className="border-b-4 border-secondary w-32"></div>
         <section className='flex items-center justify-end gap-8 my-4'>
             <div className={`${currentTab === 0 && 'border-b-4 py-2 border-secondary'} cursor-pointer`} onClick={()=> setCurrentTab(0)}>
                 <h2>All</h2>
