@@ -10,8 +10,8 @@ const Students = () => {
     <>
       <section className="h-screen heroImg">
         <NavbarSection />
-        <section className="flex items-center justify-between gap-4 h-[90vh] p-20">
-          <div className="w-1/2 space-y-4">
+        <section className="flex items-center justify-between gap-4 h-[90vh] sm:p-20 px-4">
+          <div className="md:w-1/2 space-y-4">
             <p className="font-bold">Learn Online. Anywhere. Anytime.</p>
             <h1 className="text-5xl">
               Find a Perfect <br /> <span className="font-thin">Mentor</span>{" "}
@@ -26,7 +26,7 @@ const Students = () => {
               <HiOutlineArrowLongRight />
             </button>
           </div>
-          <div className="">
+          <div className="md:block hidden">
             <div className="relative">
               <Image
                 className="rounded-xl mx-auto h-[80vh]"
@@ -48,7 +48,7 @@ const Students = () => {
             </div>
           </div>
         </section>
-        <section className="p-20">
+        <section className="md:p-20 p-4">
           <div className="space-y-8">
             <h1 className="text-4xl text-center">
               A Social network for Instructors and Students
@@ -58,9 +58,9 @@ const Students = () => {
               experts and top university professors.
             </p>
           </div>
-          <section className="flex items-center gap-4 justify-between my-12">
-            <div className="w-5/12 space-y-4">
-              <h1 className="text-5xl font-bold">
+          <section className="md:flex items-center gap-4 justify-between my-12 md:space-y-0 space-y-4">
+            <div className="md:w-5/12 space-y-4">
+              <h1 className="md:text-5xl text-3xl font-bold">
                 Improve your coding skills by building realistic projects.
               </h1>
               <p className="text-sm font-thin">
@@ -70,13 +70,13 @@ const Students = () => {
                 skyrocket!
               </p>
             </div>
-            <div className="w-7/12 mx-auto">
+            <div className="md:w-7/12 mx-auto">
               <img src="/coding.webp" alt="" />
             </div>
           </section>
         </section>
-        <section className="flex">
-          <div className="w-1/2">
+        <section className="md:flex md:px-0 px-4">
+          <div className="md:w-1/2">
             <img src="/hero.jpg" alt="" />
           </div>
           <div className="p-10 space-y-4 flex items-center justify-center">
@@ -91,15 +91,15 @@ const Students = () => {
             </div>
           </div>
         </section>
-        <section className="flex">
-          <div className="p-20 w-1/2 space-y-4">
+        <section className="md:flex md:px-0 px-4">
+          <div className="md:p-20 p-4 md:w-1/2 space-y-4">
             <h2>Built on Modern Web Technologies.</h2>
             <p className="text-3xl">
               WPLMS is “the” learning management software for future. The vision
               and the future is amazing.
             </p>
           </div>
-          <div className="w-1/2">
+          <div className="md:w-1/2">
             <img src="/learn1.jpg" alt="" />
           </div>
         </section>

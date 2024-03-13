@@ -62,7 +62,7 @@ const TestimonialSection = () => {
 
   return (
     <>
-      <section className="sm:px-12 px-2 sm:py-16 py-8 heroImg">
+      <section className="sm:px-12 px-2 sm:py-16 py-8 testimonialImg">
         <h1 className="text-center text-4xl">What Our Students Say</h1>
         <div className="border-b-4 border-secondary w-36 mx-auto mt-2"></div>
         <div className="my-12">

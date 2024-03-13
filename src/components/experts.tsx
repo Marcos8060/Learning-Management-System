@@ -3,14 +3,14 @@ import React from "react";
 
 const Experts = () => {
   return (
-    <section className="px-20 py-10 space-y-4 h-[80vh]">
+    <section className="sm:px-20 px-4 py-10 space-y-4 md:h-[80vh] h-auto">
       <div className="text-center">
         <h3>Our Expertise</h3>
         <h1 className="font-bold text-2xl">
           Special crafted courses Learn from Industry experts
         </h1>
       </div>
-      <section className="flex items-center gap-4 justify-between">
+      <section className="md:flex items-center gap-4 justify-between md:space-y-0 space-y-4">
         {experts.map((item, index) => (
           <div className="p-1 mx-auto" key={index}>
             <div className="group relative items-center justify-center overflow-hidden cursor-pointer">

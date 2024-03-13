@@ -6,8 +6,8 @@ import { FaPhone } from "react-icons/fa";
 const FooterSection = () => {
   return (
     <footer className="bg-secondary text-white px-10 py-20">
-      <section className="flex gap-4 justify-between">
-        <div className="space-y-4">
+      <section className="md:flex gap-4 justify-between md:space-y-0 space-y-8">
+        <div className="space-y-4 mx-auto">
           <h1 className="text-xl">About</h1>
           <p className="text-sm font-thin">
             Academist is dedicated to constant learning & knowledge sharing.
@@ -21,7 +21,7 @@ const FooterSection = () => {
             <p className="text-xs">+254 716 666 862</p>
           </div>
         </div>
-        <div className="space-y-4">
+        <div className="space-y-4 mx-auto">
           <h1 className="text-xl">Popular Courses</h1>
           <ul className="font-thin text-sm space-y-2">
             <li>Machine Learning</li>
@@ -37,8 +37,8 @@ const FooterSection = () => {
             <li>Available Courses</li>
           </ul>
         </div>
-        <div className='text-center space-y-4'>
-          <h1 className="text-xl">Flexible Learning</h1>
+        <div className='space-y-4'>
+          <h1 className="text-xl text-center">Flexible Learning</h1>
           <img src="/world.png" alt="" />
         </div>
       </section>

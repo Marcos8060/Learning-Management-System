@@ -4,7 +4,7 @@ import React from "react";
 
 const DesignCategory = () => {
   return (
-    <section className="grid grid-cols-3 gap-4">
+    <section className="grid md:grid-cols-3 grid-cols-1 gap-4">
       {designs.map((item, index) => (
         <div className="relative cursor-pointer" key={index}>
           <div

@@ -16,12 +16,12 @@ const AboutSection = () => {
               Home
             </Link>
             <p className="text-white">/</p>
-            <p className="text-[#FEB900]">For Students</p>
+            <Link href="/students" className="text-[#FEB900]">For Students</Link>
           </div>
         </div>
       </section>
-      <section className="flex items-center gap-8 justify-between py-10 px-20">
-        <div className="w-1/2 space-y-4">
+      <section className="md:flex items-center gap-8 justify-between py-10 sm:px-20 px-4">
+        <div className="md:w-1/2 space-y-4">
           <div>
             <h1 className="text-4xl">
               Choose <span className="font-bold">Academia</span>.
@@ -39,7 +39,7 @@ const AboutSection = () => {
             Making it over 2000 years old.
           </p>
         </div>
-        <div className="">
+        <div className="md:block hidden">
           <section className="flex gap-4">
             <div>
               <img className="w-58 h-96 rounded-xl" src="/learn3.jpg" alt="" />
@@ -60,8 +60,8 @@ const AboutSection = () => {
         </div>
       </section>
       <section className="flex items-center">
-        <div className="bg-primary w-1/2 p-20 h-[50vh] space-y-4">
-          <h1 className="text-4xl font-bold">
+        <div className="bg-primary w-1/2 sm:p-20 p-4 h-[50vh] space-y-4">
+          <h1 className="md:text-4xl font-bold">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi.
           </h1>
           <div>
@@ -70,7 +70,7 @@ const AboutSection = () => {
           </div>
         </div>
         <div className="w-1/2">
-          <img className="h-[50vh] w-full" src="/learn1.jpg" alt="" />
+          <img className="h-[50vh] w-full object-cover" src="/learn1.jpg" alt="" />
         </div>
       </section>
       <Experts />

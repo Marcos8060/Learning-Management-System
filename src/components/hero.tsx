@@ -7,8 +7,8 @@ const HeroSection = () => {
   return (
     <section className="h-screen heroImg">
       <NavbarSection />
-      <section className="flex items-center justify-between gap-4 h-[90vh] p-20">
-        <div className="w-1/2 space-y-4">
+      <section className="md:flex items-center justify-between gap-4 h-[90vh] sm:px-20 px-4 py-20">
+        <div className="md:w-1/2 w-full space-y-4">
           <p className="font-bold">Learn Online. Anywhere. Anytime.</p>
           <h1 className="uppercase text-5xl">
             Future of <br /> <span className="font-thin">Online</span>{" "}
@@ -25,7 +25,7 @@ const HeroSection = () => {
             <HiOutlineArrowLongRight />
           </button>
         </div>
-        <div className="">
+        <div className="md:block hidden">
           <div className="relative">
             <Image
               className="rounded-xl mx-auto"
