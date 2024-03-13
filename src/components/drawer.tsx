@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { AiOutlineClose } from "react-icons/ai";
 
 interface props{
@@ -35,20 +36,20 @@ export default function Drawer({ children, isOpen, setIsOpen }:props) {
             <div className="flex items-center justify-end px-48">
               <ul className="text-left space-y-4 w-48 py-12">
                 <li className="w-72 px-3 py-2 flex flex-col gap-1 border-b border-primary hover:border-secondary transition ease-in-out duration-700">
-                  <a
+                  <Link
                     className="no-underline hover:text-secondary transition ease-in-out duration-700"
                     href="/students"
                   >
                     For Students
-                  </a>
+                  </Link>
                 </li>
                 <li className="w-72 px-3 py-2 group flex flex-col gap-1 border-b border-primary hover:border-secondary transition ease-in-out duration-700">
-                  <a
+                  <Link
                     className="no-underline hover:text-secondary transition ease-in-out duration-700"
                     href="/about"
                   >
                     How it Works
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
