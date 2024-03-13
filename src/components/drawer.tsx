@@ -37,7 +37,7 @@ export default function Drawer({ children, isOpen, setIsOpen }:props) {
                 <li className="w-72 px-3 py-2 flex flex-col gap-1 border-b border-primary hover:border-secondary transition ease-in-out duration-700">
                   <a
                     className="no-underline hover:text-secondary transition ease-in-out duration-700"
-                    href="#about"
+                    href="/students"
                   >
                     For Students
                   </a>
@@ -45,7 +45,7 @@ export default function Drawer({ children, isOpen, setIsOpen }:props) {
                 <li className="w-72 px-3 py-2 group flex flex-col gap-1 border-b border-primary hover:border-secondary transition ease-in-out duration-700">
                   <a
                     className="no-underline hover:text-secondary transition ease-in-out duration-700"
-                    href="#experience"
+                    href="/about"
                   >
                     How it Works
                   </a>

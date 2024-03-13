@@ -76,7 +76,7 @@ const NavbarSection = () => {
         <nav className="md:block hidden py-4">
           <ul className="flex items-center gap-8">
             <li className="">
-              <Link href="#about" className="">
+              <Link href="/students" className="">
                 For Students
               </Link>
             </li>
