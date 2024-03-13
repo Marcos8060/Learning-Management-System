@@ -50,39 +50,28 @@ const Students = () => {
         </section>
         <section className="p-20">
           <div className="space-y-8">
-            <h1 className="text-4xl font-bold">
+            <h1 className="text-4xl text-center">
               A Social network for Instructors and Students
             </h1>
-            <p>
+            <p className="text-center">
               Choose out of 2500+ mentors. Trusted by 250k users. Industry
               experts and top university professors.
             </p>
           </div>
           <section className="flex items-center gap-4 justify-between my-12">
-            <div className="space-y-4">
-              <h1 className="text-xl font-semibold">Multiple Instructors</h1>
-              <p className="text-sm">
-                Focussed attention by multiple instructors per student.
+            <div className="w-5/12 space-y-4">
+              <h1 className="text-5xl font-bold">
+                Improve your coding skills by building realistic projects.
+              </h1>
+              <p className="text-sm font-thin">
+                Our professionally designed challenges help you gain hands-on
+                experience writing HTML, CSS, and JavaScript. We create the
+                designs so you can focus on the code and see your skills
+                skyrocket!
               </p>
             </div>
-            <div className="space-y-4">
-              <h1 className="text-xl font-semibold">Industry Experts</h1>
-              <p className="text-sm">
-                Consultation and seminars by various Industry experts
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h1 className="text-xl font-semibold">Student Groups</h1>
-              <p className="text-sm">
-                Social Groups, Classes, batches for wholistic learning
-                environment
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h1 className="text-xl font-semibold">Personalised Focus</h1>
-              <p className="text-sm">
-                Personalised course curriculum based on user progress.
-              </p>
+            <div className="w-7/12 mx-auto">
+              <img src="/coding.webp" alt="" />
             </div>
           </section>
         </section>
@@ -103,10 +92,11 @@ const Students = () => {
           </div>
         </section>
         <section className="flex">
-          <div className="p-20 w-1/2">
+          <div className="p-20 w-1/2 space-y-4">
             <h2>Built on Modern Web Technologies.</h2>
-            <p>
-              Progressive web app framework. Extract a mobile app from the site.
+            <p className="text-3xl">
+              WPLMS is “the” learning management software for future. The vision
+              and the future is amazing.
             </p>
           </div>
           <div className="w-1/2">
